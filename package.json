@@ -1,0 +1,31 @@
+{
+  "name": "fifa_2018_final",
+  "version": "1.0.0",
+  "main": "server/server.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "start": "node .",
+    "posttest": "npm run lint && nsp check",
+    "server_lint_fix": "./node_modules/.bin/eslint server/server.js --fix",
+    "client_lint_fix": "./node_modules/.bin/eslint client/script.js --fix"
+  },
+  "dependencies": {
+    "@google/maps": "^0.5.4",
+    "lodash": "^4.17.10",
+    "scaledrone-node-push": "^2.1.0",
+    "twit": "^2.2.11"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "license": "UNLICENSED",
+  "description": "Fifa 2018 Russia Final - France vs Croatia",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0"
+  }
+}
